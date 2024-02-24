@@ -26,6 +26,8 @@ public class StudentService implements iPersonService<Student>{
         this.count++;
     }
     public void sortByFIO(){
+        // PersonComparator<Student> comparator = new PersonComparator<Student>();
+        // this.listStudents.sort(comparator);
         this.studentList.sort(new PersonComparator<Student>());
     }
 }

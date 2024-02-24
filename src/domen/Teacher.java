@@ -6,4 +6,11 @@ public class Teacher extends WorkingPerson{
         super(name, age);
         this.degree = degree;
     }
+
+    @Override
+    public String toString() {
+        return "Teacher {" + "name=" + super.getName() + ", age=" + super.getAge()+
+                ", degree='" + degree + '\'' +
+                '}';
+    }
 }
