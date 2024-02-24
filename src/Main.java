@@ -1,6 +1,5 @@
-import domen.Student;
-import domen.StudentGroup;
-import domen.StudentSteam;
+import controllers.AccountController;
+import domen.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -83,5 +82,14 @@ public class Main {
         ;
         System.out.println("studentSteam1 printing:");
         System.out.println(studentSteam1);
+
+        System.out.println("----Lesson4----");
+        Employee worker1 = new Employee("Vasiliy", 55, "worker");
+        Teacher teacher1 = new Teacher("Leonid", 33, "доцент");
+        //AccountController controller = new AccountController();
+        AccountController.paySalary(teacher1, 2000);
+        AccountController.paySalary(worker1, 1000);
+        Student studentVasya = new Student("Vasya Hitriy", 19);
+        // controller.paySalary(studentVasya, 1000);
     }
 }
