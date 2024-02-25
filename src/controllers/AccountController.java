@@ -21,7 +21,7 @@ public class AccountController {
             sumForAverageAge = sumForAverageAge + m.getAge();
         }
         double averageAge = sumForAverageAge/ list.size();
-        System.out.println("Средний возраст: " + averageAge);
+        System.out.println("Средний возраст: "  + averageAge);
     }
 }
 
